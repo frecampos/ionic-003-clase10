@@ -15,6 +15,14 @@ const routes: Routes = [
     path: 'menu',
     loadChildren: () => import('./pages/menu/menu.module').then( m => m.MenuPageModule)
   },
+  {
+    path: 'agregar',
+    loadChildren: () => import('./pages/agregar/agregar.module').then( m => m.AgregarPageModule)
+  },
+  {
+    path: 'listar',
+    loadChildren: () => import('./pages/listar/listar.module').then( m => m.ListarPageModule)
+  },
 ];
 
 @NgModule({
