@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'listar',
     loadChildren: () => import('./pages/listar/listar.module').then( m => m.ListarPageModule)
   },
+  {
+    path: 'eliminar',
+    loadChildren: () => import('./pages/eliminar/eliminar.module').then( m => m.EliminarPageModule)
+  },
 ];
 
 @NgModule({
